@@ -8,12 +8,17 @@ def sum_list(numbers):
     """
 
     # TODO: set a running total variable
+    total = 0
 
-    # TODO: use loop to calculate the sum of all numbers in the list
+    # use a loop to calculate the sum of all numbers in the list
+    for n in numbers:
+        total += n
 
-    # TODO: return the sum
+    # return the sum
+    return total
 
 
 if __name__ == "__main__":
     nums = [5, 19, 2, 33, -5, 2]
-    # TODO: call function sum_list() and send argument 'nums', then print it out for your testing
+    # call function sum_list() and send argument 'nums', then print it out for testing
+    print(sum_list(nums))
